@@ -92,4 +92,9 @@ always execute a block, and then maybe repeat it.
         i++;
     } while (i < 10);
 
-- 
+ARRAYS
+- An array is a variable that stores multiple values.
+- Define an array like this: int prices[6];
+- You must always specify the size of the array. C does
+not provide dynamic arrays out of the box (you have to
+use a data structure like a linked list for that).
