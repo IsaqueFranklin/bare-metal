@@ -31,4 +31,4 @@ bits.
 long double can hold even more numbers.
 - A constant is similar to a variable but it has to have 'const' and it needs to always specify a value. const in AGE = 37; It's more commom to declare the constants in uppercase.
 - Usually: uppercase names means constant and lowercase means variable.
-- #define AGE 37 -> Is also valid sintax to declare constants.
+- #define AGE 37 -> Is also valid sintax to declare constants. In this case is not necessary to add a type, and you also don't need the '=' sign, and you omit the ';' at the end. The C compiler will infer the type from the value specified at compile time.
