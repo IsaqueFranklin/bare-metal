@@ -115,3 +115,12 @@ strncmp() to compare the first n characters of
 two strings
 strlen() to calculate the length of a string
 and many, many more.
+
+POINTERS
+- A pointer is the address of a block of memory that
+contains a variable.
+- When you declare an integer number like this:
+int age = 37;
+We can use the & operator to get the value of the
+address in memory of a variable:
+printf("%p", &age); /* 0x7ffeef7dcb9c */
