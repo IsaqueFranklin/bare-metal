@@ -177,3 +177,11 @@ STATIC VARIABLES
 TYPE DEFINITIONS
 - The 'typedef' keyword in C allows you to define new types (your own).
 - typedef existingtype NEWTYPE
+
+ENUMERATED TYPES 
+- Using the typedef and enum keywords we can define a type that can have either one value or another.
+- typedef enum {
+    true,
+    false
+  } BOOLEAN;
+- Not a pratical example, but the idea is there.
