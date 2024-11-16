@@ -124,3 +124,7 @@ int age = 37;
 We can use the & operator to get the value of the
 address in memory of a variable:
 printf("%p", &age); /* 0x7ffeef7dcb9c */
+
+- in an array the like int prices[3] = {5, 4, 3}, the 'prices' is a pointer to the first item  of the array.
+- printf("%u", *prices); // return 5.
+- We can get the second item of the array by adding 1 to the prices pointer: printf("%u", *(prices + 1)); /* 4 */. And so on for all the other values. 
