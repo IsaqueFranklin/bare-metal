@@ -98,3 +98,20 @@ ARRAYS
 - You must always specify the size of the array. C does
 not provide dynamic arrays out of the box (you have to
 use a data structure like a linked list for that).
+
+STRINGS
+- In C, strings are a special king of array: a string is an array of char values: char name[7];
+- A strings can be initialized like a normal array: char name[7] = { 'F', 'l', 'a', 'v', 'i', 'o' };
+- char name[7] = "Flavio";
+- You can print a string via printf() using %s : printf("%s", name);
+- the last character of a string must be a 0 value and we must make space for it.
+
+- #include <string.h>
+- And once you do that, you have access to:
+strcpy() to copy a string over another string
+strcat() to append a string to another string
+strcmp() to compare two strings for equality
+strncmp() to compare the first n characters of
+two strings
+strlen() to calculate the length of a string
+and many, many more.
