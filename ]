@@ -169,3 +169,6 @@ VARIABLES SCOPE
     -- global variables: variable defined/declared outside a function.
     -- local variables: variable declared inside a function.
 - Global variables are accessible from any function of the program, and they are available for the whole execution of the program, until it ends.
+
+STATIC VARIABLES
+- What's a static variable? A static variable is initialized to 0 if no initial value is specified, and it retains the value across function calls. 
