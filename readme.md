@@ -1,3 +1,4 @@
+WHAT THE F*** IS THE C LANGUAGE?
 - C is a statically typed language, this means that any variable has an associated type and this type is known at compilation time. C variables are int, char, short, long, float, double, long double 
 
 - char type is used to store ASCII letters but it can also hold small integers from -128 to 127. It takes at least 1 byte.
