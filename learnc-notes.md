@@ -29,6 +29,67 @@ and 10^+37, and is typically implemented using 32
 bits.
 - double can represent a bigger set of numbers.
 long double can hold even more numbers.
+
+CONSTANTS
 - A constant is similar to a variable but it has to have 'const' and it needs to always specify a value. const in AGE = 37; It's more commom to declare the constants in uppercase.
 - Usually: uppercase names means constant and lowercase means variable.
 - #define AGE 37 -> Is also valid sintax to declare constants. In this case is not necessary to add a type, and you also don't need the '=' sign, and you omit the ';' at the end. The C compiler will infer the type from the value specified at compile time.
+
+OPERATORS
+- arithmetic, comparison, logical, compound assignment, bitwise, pointer, structure and miscellaneaous operators. 
+Arithmetic Operators:
+- % is modulo.
+- ++ or +a is increment.
+- += is a + = b.
+Ternary Operator:
+- Only operator in C that works with 3 operands.
+- How it works: <condition> ? <expression> : <expression> => a ? b : c.
+Sizeof
+- It returns the size of the operand you pass.
+
+CONDITIONALS
+- The switch: If you need to do too many if / else / if blocks to
+perform a check, perhaps because you need to check
+the exact value of a variable, then switch can be
+very useful to you.
+
+- int a = 1;
+switch (a) {
+ case 0:
+ /* do something */
+ break;
+ case 1:
+ /* do something else */
+ break;
+ case 2:
+ /* do something else */
+ break;
+}
+
+- We need a break keyword at the end of each case,
+to avoid the next case to be executed when the one
+before ends.
+- You can add a "catch-all" case at the end, labeled 'default'.
+
+FOR LOOPS
+- for (int i = 0; i <= 10; i++) {
+ /* instructions to be repeated */
+}
+
+WHILE LOOPS
+- while (i < 10) {
+    // Doing some stuff.
+    i++;
+    // Incrementing i so the loop is not infinite.
+}
+- While loops are great, but there might be times when
+you need to do one particular thing: you want to
+always execute a block, and then maybe repeat it.
+
+-   int i = 0;
+    do {
+        /* do something */
+        i++;
+    } while (i < 10);
+
+- 
