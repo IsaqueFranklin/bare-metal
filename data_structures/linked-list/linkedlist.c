@@ -37,5 +37,8 @@ void destroy_node_int(struct Node_int *note_to_destroy) {
 }
 
 struct Node_int * iterate(int index, struct LinkedList_int *linkedlist) {
-
+  if (index < 0 || index >= linked_list->length){
+    printf("Index out of bound...")
+    exit(9);
+  }
 }

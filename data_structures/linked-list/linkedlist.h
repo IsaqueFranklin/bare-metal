@@ -8,6 +8,7 @@
 #define linkedlist_h
 
 #include <stdlib.h>
+#include <stdio.h>
 
 // There is no classes in C (thank God!). So we need to improvise.
 
