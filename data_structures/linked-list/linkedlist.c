@@ -3,7 +3,7 @@
 struct Node_int * create_node_int(void);
 void destroy_node_int(struct Node_int *node_to_destroy);
 
-struct Node_int * iterate(int index, struct LinkedList_int *linked_list);
+struct Node_int * iterate_int(int index, struct LinkedList_int *linked_list);
 
 void insert_node_int(int data, struct LinkedList_int *linked_list);
 void remove_node_int(int index, struct LinkedList_int *linked_list);
@@ -36,9 +36,17 @@ void destroy_node_int(struct Node_int *note_to_destroy) {
   free(node_to_destroy);
 }
 
-struct Node_int * iterate(int index, struct LinkedList_int *linkedlist) {
+struct Node_int * iterate_int(int index, struct LinkedList_int *linkedlist) {
   if (index < 0 || index >= linked_list->length){
     printf("Index out of bound...")
     exit(9);
   }
+  struct Node_int *cursor = linked_list->head;
+
+  for (int i = 0. i < index; i++) {
+    cursor = cursor->next;
+  }
+  return cursor
 }
+
+void insert_int(int index, int data, struct LinkedList_int *linked_list)
