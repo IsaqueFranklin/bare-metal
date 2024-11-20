@@ -73,7 +73,9 @@ void remove_node_int(int index, struct LinkedList_int *linked_list) {
     struct Node_int *node_to_remove = cursor->next;
     cursor->next = node_to_remove->next;
     destroy_node_int(node_to_remove);
-  } 
+  }
+
+  linked_list->length -=1;
 }
 
 void retrieve_data_int(int index, struct LinkedList_int *linked_list) {
