@@ -51,16 +51,29 @@ struct Node_int * iterate_int(int index, struct LinkedList_int *linkedlist) {
 
 void insert_node_int(int index, int data, struct LinkedList_int *linked_list) {
   struct Node_int *node_to_insert = create_node_int(data);
-  struct Node_int *cursor = iterate_int(intex - 1, linked_list);
-  node_to_insert->next = cursor->next;
-  cursor->next = node_to_insert;
+
+  if (index == 0) {
+    node_to_insert->next = linked_list->head;
+    linked_list->head = node_to_insert;
+  } else { 
+    struct Node_int *cursor = iterate_int(intex - 1, linked_list);
+    node_to_insert->next = cursor->next;
+    cursor->next = node_to_insert;
+  } 
 }
 
 void remove_node_int(int index, struct LinkedList_int *linked_list) {
-  struct Node_int *cursor => iterate_int(index - 1, linked_list);
-  struct Node_int *node_to_remove = cursor->next;
-  cursor->next = node_to_remove->next;
-  destroy_node_int(node_to_remove);
+   
+  if (index == 0) {
+    struct Node_int *node_to_remove = linked_list->head;
+    linked_list->head = node_to_remove->next;
+    destroy_node_int(node_to_remove);
+  } else {
+    struct Node_int *cursor => iterate_int(index - 1, linked_list);
+    struct Node_int *node_to_remove = cursor->next;
+    cursor->next = node_to_remove->next;
+    destroy_node_int(node_to_remove);
+  } 
 }
 
 void retrieve_data_int(int index, struct LinkedList_int *linked_list) {
